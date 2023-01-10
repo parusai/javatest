@@ -44,12 +44,7 @@ pipeline {
         }
     }
 
-    stage('Deploy to Pre_prod') {
-      steps {
-            echo 'Staging'
-          }
-    }
-
+  
     stage('Prod Approval') {
       steps {
         script {

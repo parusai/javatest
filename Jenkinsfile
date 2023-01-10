@@ -37,6 +37,11 @@ pipeline {
           echo 'Test'
         }
     }
+ stage('Deploy to Pre_prod') {
+      steps {
+            echo 'Staging'
+          }
+    }
 
     stage('Deploy to UAT') {
       steps {
